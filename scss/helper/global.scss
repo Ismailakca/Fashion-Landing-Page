@@ -1,0 +1,21 @@
+body{
+    font-family: $font-family;
+    line-height: 1.4;
+    background-color: $color-background;
+}
+.container{
+    width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
