@@ -1,0 +1,46 @@
+.Showcase{
+    background: url(../../image/background.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        @include mq('tablet'){
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include mq('tablet'){
+            margin-bottom: 101px;
+        }
+        .content__title{
+            font-size: $font-text-medium;
+            color: $color-text;
+            font-weight: 500;
+        }
+        .content__main{
+            color: $color-text;
+            font-weight: 700;
+            font-size: 80px;
+        }
+        .content__text{
+            font-size: $font-text-medium;
+            color: $color-text;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .content__btn{
+            display: flex;
+            align-items: center;
+           
+        }
+    }
+}

@@ -18,5 +18,17 @@ body{
     stroke: currentColor;
     fill: currentColor;
 }
-
+.btn{
+    background-color: $color-text;
+    color: #fff;
+    font-size: $font-text-medium;
+    padding: 4px 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.ml{
+    margin-left: 34px;
+}
 
