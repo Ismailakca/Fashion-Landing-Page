@@ -4,7 +4,7 @@ body{
     background-color: $color-background;
 }
 .container{
-    width: $max-width;
+    max-width: $max-width;
     margin-left: auto;
     margin-right: auto;
     padding-left: $gutter;
@@ -17,5 +17,6 @@ body{
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-  }
-  
+}
+
+

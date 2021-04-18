@@ -1,0 +1,113 @@
+.Header{
+    height: 57px;
+    background-color: #fff;
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+    &__logo{
+        display: inline-block;
+        text-decoration: none;
+        color: $color-text;
+        font-size: $font-logo;
+        font-weight: 700;
+    }
+    &__navigation{
+        position: absolute;
+        top:58px;
+        left: 0;
+        right: 0;
+        transform: translateX(-100%);
+        max-width: 100vw;
+        min-height: 100vh;
+        transition: all .5s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include mq('tablet'){
+            position: static;
+            flex-direction: row;
+            transform: translateY(0);
+            margin-left: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .Header__nav{ 
+            @include mq('tablet'){
+                display: flex;
+                align-items: center;
+                margin-right: 90px;
+            }
+            @include mq('desktop'){
+                margin-right: 144px;
+            }
+            &-list{
+                @include mq('tablet'){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &-item{
+                    &:not(:first-child){
+                        margin-top: 10px;
+                        @include mq('tablet'){
+                            margin-top: 0;
+                            margin-left: 30px;
+                        }
+                    }
+
+                    a{
+                        color: $color-text;
+                        font-size: $font-text-medium;
+                        text-decoration: none;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .Header__buttons{
+            margin-top: 20px;
+            @include mq('tablet'){
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                
+            }
+            a{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+                font-size: $font-text-medium;
+                text-decoration: none;
+                font-weight: 400;
+                display: inline-block;
+
+                
+                
+                svg{
+                    fill: #22262A;
+                }
+            }
+        }
+    }
+
+    &__button{
+        margin-left: auto;
+        border: none;
+        background: transparent;
+        font-size: $font-logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mq('tablet'){
+            display: none;
+        }
+        
+    }
+    .is_show{
+        transform: translateX(0);
+    }
+}
