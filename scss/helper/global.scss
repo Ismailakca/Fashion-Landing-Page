@@ -31,4 +31,20 @@ body{
 .ml{
     margin-left: 34px;
 }
+.title{
+    font-weight: 700;
+    color: $color-text;
+    font-size: $font-title-size;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+    font-weight: 400;
+    color: $color-text;
+    font-size: $font-text-size;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 65px;
+}
 

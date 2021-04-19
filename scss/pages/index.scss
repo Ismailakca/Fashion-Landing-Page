@@ -29,7 +29,10 @@
         .content__main{
             color: $color-text;
             font-weight: 700;
-            font-size: 80px;
+            font-size: 50px;
+            @include mq('tablet'){
+                font-size: 80px;
+            }
         }
         .content__text{
             font-size: $font-text-medium;
@@ -58,7 +61,6 @@
     }
     &__left{
         display: flex;
-        align-items: center;
         justify-content: space-between;
         flex-direction: column;
         @include mq('tablet'){
@@ -72,7 +74,6 @@
         }
         .left__two{
             display: flex;
-            align-items: center;
             justify-content: space-between;
             margin-top: 22px;
             @include mq('tablet'){
@@ -104,6 +105,68 @@
             background: #000;
             opacity: .5;
          
+        }
+    }
+}
+.Women{
+    padding-bottom: 100px;
+    .slide{
+        cursor: pointer;
+        &__content{
+            margin-top: 31px;
+           .slide__text{
+               color: $color-text;
+               font-size: $font-text-size;
+               font-weight: 300;
+           }
+           .slide__title{
+               font-weight: 600;
+               color: $color-text;
+               font-size: $font-text-size;
+               margin-top: 3px;
+               margin-bottom: 3px;
+           }
+           .money{
+            color: $color-text;
+            font-size: $font-text-size;
+            text-decoration: line-through;
+            margin-right: 15px;
+           }
+           .redmoney{
+            font-size: $font-text-size;
+            color: #CF2929;
+           }
+        }
+    }
+}
+.Men{
+    padding-bottom: 100px;
+    .slide{
+        cursor: pointer;
+        &__content{
+            margin-top: 31px;
+           .slide__text{
+               color: $color-text;
+               font-size: $font-text-size;
+               font-weight: 300;
+           }
+           .slide__title{
+               font-weight: 600;
+               color: $color-text;
+               font-size: $font-text-size;
+               margin-top: 3px;
+               margin-bottom: 3px;
+           }
+           .money{
+            color: $color-text;
+            font-size: $font-text-size;
+            text-decoration: line-through;
+            margin-right: 15px;
+           }
+           .redmoney{
+            font-size: $font-text-size;
+            color: #CF2929;
+           }
         }
     }
 }
