@@ -191,23 +191,46 @@
             position: relative;
             height: 602px;
             .Avones__image{
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                border-top: 15px solid #fff;
-                border-left: 15px solid #fff;
+                display: none;
+                @include mq('desktop'){
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    border-top: 15px solid #fff;
+                    border-left: 15px solid #fff;
+                    display: block;
+                }
             }
             .Avones__image-one{
                 margin-top: -50px;
             }
             .Avones__btn{
-                display: inline-block;
-                margin-top: 170px;
-                margin-left: 100px;
-                color: $color-text;
-                font-size: $font-text-size;
+                display: none;
+                @include mq('desktop'){
+                    display: inline-block;
+                    margin-top: 170px;
+                    margin-left: 100px;
+                    color: $color-text;
+                    font-size: $font-text-size;
+                }
             }
         }
        
+    }
+}
+.Copy{
+    height: 93px;
+    background-color: #E7F5F8;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+    .copyright{
+        font-size: $font-text-size;
+        color: $color-text;
+        font-weight: 400;
     }
 }
